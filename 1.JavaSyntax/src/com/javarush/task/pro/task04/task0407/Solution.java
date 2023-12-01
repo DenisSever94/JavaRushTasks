@@ -9,15 +9,15 @@ public class Solution {
 
         int sum = 0;
         int number = 0;
-        while (number <= 100) {
+        while (number < 100) {
 
-            sum = sum + number;
+
             number++;
-            if ((sum % 3 ) == 0) {
+            if ((number % 3 ) == 0) {
                 continue;
             }
-            System.out.println(sum);
+            sum = sum + number;
         }
-
+        System.out.println(sum);
     }
 }
