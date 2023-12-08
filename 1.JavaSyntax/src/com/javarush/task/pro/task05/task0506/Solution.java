@@ -10,9 +10,9 @@ public class Solution {
     public static int[] array = new int[5];
 
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
-            array[i] = scanner.nextInt();
+            array[i] = sc.nextInt();
 
         }
         int min = array[0];
