@@ -6,16 +6,16 @@ package com.javarush.task.task01.task0107;
 
 public class Solution {
     public static void main(String[] args) {
-        int o = 2;
-        int h = 12;
+        int d = 2;
+        int c = 12;
 
         // y = x * y;
-         h = o + h;
+         c = d + c;
 
-        o = h - o;
-        h = h - o;
+        d = c - d;
+        c = c - d;
 
-        System.out.println(o);
-        System.out.println(h);
+        System.out.println(d);
+        System.out.println(c);
     }
 }
