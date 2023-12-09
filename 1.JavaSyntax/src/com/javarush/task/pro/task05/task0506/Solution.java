@@ -2,21 +2,21 @@ package com.javarush.task.pro.task05.task0506;
 
 import java.util.Scanner;
 
-/* 
-Минимальное из N чисел
-*/
-
 public class Solution {
-    public static int[] array = new int[5];
+
+    public static int[] array;
 
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
-            array[i] = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
+
+        int size = scanner.nextInt();
+        array = new int[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
 
         }
         int min = array[0];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < size; i++) {
             if (array[i] < min)
                 min = array[i];
         }
