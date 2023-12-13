@@ -6,11 +6,11 @@ public class Solution {
     public static int[] array;
 
     public static void main(String[] args) throws Exception {
-     Scanner sc = new Scanner(System.in);
-     int size = sc.nextInt();
+     Scanner scanner = new Scanner(System.in);
+     int size = scanner.nextInt();
      array = new int[size];
-        for (int о = 0; о < size; о++) {
-            array[о] = sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
         } int max = array[0];
         for (int i = 0; i < size; i++) {
             if (array[i] > max)
