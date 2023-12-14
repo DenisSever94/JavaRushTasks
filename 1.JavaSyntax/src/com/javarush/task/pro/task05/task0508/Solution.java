@@ -7,19 +7,28 @@ public class Solution {
     public static String[] strings;
 
     public static void main(String[] args) {
-        // заполнть массив сток из консоли, если есть одинаковые стороки
-        //удалить их и вернуть null
         Scanner scanner = new Scanner(System.in);
-        int size = scanner.nextInt();
-        strings = new String[size];
-        String[] array;
-
+        strings = new String[6];
         for (int i = 0; i < strings.length; i++) {
             strings[i] = scanner.nextLine();
-            if (strings[i].equals(strings))
-                strings = new String[6];
-            System.out.print(strings[i] + ", ");
+       }
+        for (int i = 0; i < strings.length - 1; i++) {
+            String srt = strings[i];
+            for (int j = i + 1; j < strings.length; j++) {
+
+                if (srt == null) {
+                    break;
+                }
+                if (srt.equals(strings[j])) {
+                    strings[i] = null;
+                    strings[j] = null;
+
+                }
+            }
         }
 
+        for (int i = 0; i < strings.length; i++) {
+            System.out.print(strings[i] + ", ");
+        }
     }
 }
