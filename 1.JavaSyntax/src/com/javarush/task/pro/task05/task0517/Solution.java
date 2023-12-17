@@ -12,7 +12,13 @@ public class Solution {
     public static int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
 
     public static void main(String[] args) {
+        if (array.length % 2 != 0) {
+            int[] a = Arrays.copyOfRange(array, 0, 5);
 
+            result = result + a;
+
+
+        }
         System.out.println(Arrays.deepToString(result));
     }
 }
