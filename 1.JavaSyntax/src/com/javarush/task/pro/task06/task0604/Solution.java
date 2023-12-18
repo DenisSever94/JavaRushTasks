@@ -6,11 +6,11 @@ package com.javarush.task.pro.task06.task0604;
 
 public class Solution {
     public static void main(String[] args) {
-        String navigator = "Джон";
-        String pilot = "Пол";
-        String secondPilot = "Джордж";
-        String flightEngineer = "Ринго";
-        createCrew(navigator, pilot, secondPilot, flightEngineer);
+        String джон = "Джон";
+        String пол = "Пол";
+        String secondpilot = "Джордж";
+        String ринго = "Ринго";
+        createCrew(джон, пол, secondpilot, ринго);
     }
 
     public static void createCrew(String navigator, String pilot, String secondPilot, String flightEngineer){
