@@ -1,7 +1,7 @@
 package com.javarush.task.pro.task05.task0502;
 
 public class Solution {
-    public static final String ODD1 = "Нечётный";
+    public static final String ODD2 = "Нечётный";
     public static final String EVEN = "Чётный";
     public static String[] strings = new String[5];
 
