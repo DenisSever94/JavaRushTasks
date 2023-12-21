@@ -15,7 +15,7 @@ public class Solution {
         if (array.length % 2 != 0) {
             int[] a = Arrays.copyOfRange(array, 0, 5);
 
-            result = result + a;
+
 
 
         }
