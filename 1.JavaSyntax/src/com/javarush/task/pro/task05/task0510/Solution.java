@@ -3,7 +3,9 @@ package com.javarush.task.pro.task05.task0510;
 import java.util.Arrays;
 
 public class Solution {
+
     public static int[][] result = new int[10][];
+
     public static void main(String[] args) {
         result[0] = new int[1];
         result[1] = new int[2];
@@ -19,7 +21,10 @@ public class Solution {
             result[i] = new int[i + 1];
             for (int j = 0; j < result[i].length; j++) {
                 result[i][j] = i + j;
+
                 System.out.print(" " + result[i][j]);
+
+
             }
             System.out.println();
         }
