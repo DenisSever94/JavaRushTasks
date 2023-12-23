@@ -1,8 +1,12 @@
 package com.javarush.task.pro.task05.task0502;
 
+/* 
+Четные и нечетные ячейки массива
+*/
+
 public class Solution {
-    public static final String ODD2 = "Нечётный";
-    public static final String EVEN = "Чётный";
+    public static final String ODD1 = "Нечётный";
+    public static final String EVEN1 = "Чётный";
     public static String[] strings = new String[5];
 
     public static void main(String[] args) {
