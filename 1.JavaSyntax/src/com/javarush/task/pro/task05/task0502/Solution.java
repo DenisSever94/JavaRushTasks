@@ -5,7 +5,7 @@ package com.javarush.task.pro.task05.task0502;
 */
 
 public class Solution {
-    public static final String ODD3 = "Нечётный";
+    public static final String ODD30 = "Нечётный";
     public static final String EVEN1 = "Чётный";
     public static String[] strings1 = new String[5];
 
