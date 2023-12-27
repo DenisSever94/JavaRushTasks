@@ -14,7 +14,7 @@ public class Solution {
     }
 
     public static void reverseArray(int[] array) {
-        //напишите тут ваш код
+
     }
 
     public static void printArray(int[] array) {
