@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
+        Scanner scanner1 = new Scanner(System.in);
+        int number = scanner1.nextInt();
         int[] array = new int[number];
         for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt();
+            array[i] = scanner1.nextInt();
 
         }
 
