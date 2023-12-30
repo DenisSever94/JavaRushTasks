@@ -7,15 +7,15 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner1 = new Scanner(System.in);
-        int number = scanner1.nextInt();
-        int[] array = new int[number];
+        int number1 = scanner1.nextInt();
+        int[] array = new int[number1];
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner1.nextInt();
 
         }
 
-        if (number % 2 != 0) {
-            for (int i = 0; i < number; i++) {
+        if (number1 % 2 != 0) {
+            for (int i = 0; i < number1; i++) {
                 System.out.println(array[i]);
             }
         } else {
