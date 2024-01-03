@@ -9,6 +9,8 @@ public class Solution {
     public static double population = 34.5;
 
     public static void main(String[] args) {
+      Solution.city = Solution.city ;
+
         printCityPopulation("Джакарта", 25.3);
         printCityPopulation("Сеул", 25.2);
         printCityPopulation("Дели", 23.1);
