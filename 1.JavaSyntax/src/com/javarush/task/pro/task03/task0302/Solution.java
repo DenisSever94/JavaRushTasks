@@ -11,12 +11,12 @@ public class Solution {
         String militaryCommissar = ", явитесь в военкомат";
 //        Scanner name = new Scanner(System.in);
         Scanner console = new Scanner(System.in);
-        String name = console.nextLine();
+        String name1 = console.nextLine();
 
         int yourAge = console.nextInt();
 
         if (yourAge >= 18 && yourAge <= 28)  {
-            System.out.println(name + militaryCommissar);
+            System.out.println(name1 + militaryCommissar);
 
         }
 
