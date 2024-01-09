@@ -7,18 +7,17 @@ package com.javarush.task.pro.task08.task0802;
 public class Solution {
 
     public static double sqrt(double a) {
-        return a * a;
+        return Math.sqrt(a * a);
     }
 
     public static double cbrt(double a) {
-        return a * a * a;
+        return Math.cbrt(a * a * a);
     }
 
     public static double pow(int number, int power) {
         if (power == 0) {
             return 1;
         }
-
         int modulus = power < 0 ? power * -1 : power;
         int result = number;
         for (int i = 1; i < modulus; i++) {
