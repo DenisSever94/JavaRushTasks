@@ -9,16 +9,14 @@ public class Solution {
     public static double population = 34.5;
 
     public static void main(String[] args) {
-      Solution.city = Solution.city ;
-
         printCityPopulation("Джакарта", 25.3);
         printCityPopulation("Сеул", 25.2);
         printCityPopulation("Дели", 23.1);
         printCityPopulation("Нью-Йорк", 21.6);
     }
 
-    public static void printCityPopulation(String city, double population){
+    public static void printCityPopulation(String city, double population) {
         System.out.println("Население города " + city + " составляет " + population + " млн человек.");
-        System.out.println("В то время как в самом густонаселенном городе " + city + " население составляет " + population + " млн человек.");
+        System.out.println("В то время как в самом густонаселенном городе " + Solution.city + " население составляет " + Solution.population + " млн человек.");
     }
 }
