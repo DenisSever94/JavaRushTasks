@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class Solution {
 
-    public static int[] array2;
+    public static int[] array;
 
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner1 = new Scanner(System.in);
 
-        int size = scanner.nextInt();
-        array2 = new int[size];
+        int size = scanner1.nextInt();
+        array = new int[size];
         for (int i = 0; i < size; i++) {
-            array2[i] = scanner.nextInt();
+            array[i] = scanner1.nextInt();
 
         }
-        int min = array2[0];
+        int min = array[0];
         for (int i = 0; i < size; i++) {
-            if (array2[i] < min)
-                min = array2[i];
+            if (array[i] < min)
+                min = array[i];
         }
         System.out.println(min);
 
