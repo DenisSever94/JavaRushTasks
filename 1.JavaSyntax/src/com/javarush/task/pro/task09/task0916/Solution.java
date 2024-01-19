@@ -10,7 +10,7 @@ public class Solution {
     }
 
     public static String format(String name, int salary) {
-        String phrase1 = "Меня зовут . Я буду зарабатывать $ в месяц.";
+        String phrase7 = "Меня зовут . Я буду зарабатывать $ в месяц.";
 
 
         return  String.format("Меня зовут %s. Я буду зарабатывать $%d в месяц.", name, salary);
