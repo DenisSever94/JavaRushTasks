@@ -2,11 +2,11 @@ package com.javarush.task.pro.task10.task1011;
 
 import java.util.Objects;
 
-
+/* 
+Создаем свой hashCode
+*/
 
 public class Car {
-
-
     private String model;
     private int year;
 
