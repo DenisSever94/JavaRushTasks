@@ -1,18 +1,16 @@
 package com.javarush.task.pro.task10.task1010;
 
-import java.util.Objects;
-
-/* 
+/*
 Два айфона
 */
 
 public class Iphone {
-    private String model;
+    private String model1;
     private String color;
     private int price;
 
     public Iphone(String model, String color, int price) {
-        this.model = model;
+        this.model1 = model;
         this.color = color;
         this.price = price;
     }
@@ -27,7 +25,7 @@ public class Iphone {
         if (!(objects instanceof Iphone))
             return false;
         Iphone iphone = (Iphone) objects;
-        return this.model == iphone.model &&
+        return this.model1 == iphone.model1 &&
                 this.color == iphone.color &&
                 this.price == iphone.price;
     }
