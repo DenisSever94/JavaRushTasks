@@ -7,11 +7,11 @@ import java.util.Objects;
 */
 
 public class Car {
-    private String model;
+    private String model1;
     private int year;
 
     public Car(String model, int year) {
-        this.model = model;
+        this.model1 = model;
         this.year = year;
     }
 
@@ -20,12 +20,12 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return year == car.year && Objects.equals(model, car.model);
+        return year == car.year && Objects.equals(model1, car.model1);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(model, year);
+        return Objects.hash(model1, year);
     }
 
 
