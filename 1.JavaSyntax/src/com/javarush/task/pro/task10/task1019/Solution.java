@@ -8,19 +8,19 @@ import java.util.Calendar;
 
 public class Solution {
 
-    private int currentYear;
+    private int currentYear1;
 
 
     public  Solution() {
-        this.currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        this.currentYear1 = Calendar.getInstance().get(Calendar.YEAR);
     }
 
-    public int getCurrentYear() {
-        return currentYear;
+    public int getCurrentYear1() {
+        return currentYear1;
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.getCurrentYear());
+        System.out.println(solution.getCurrentYear1());
     }
 }
