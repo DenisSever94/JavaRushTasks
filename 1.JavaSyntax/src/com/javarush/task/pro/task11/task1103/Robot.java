@@ -6,7 +6,7 @@ package com.javarush.task.pro.task11.task1103;
 
 public class Robot {
 
-    public static int robotCounter1;
+    public static int robotCounter;
 
     public int id;
 
@@ -19,11 +19,11 @@ public class Robot {
     public Robot(String model, int productionYear) {
         this.model = model;
         this.productionYear = productionYear;
-        this.id = ++robotCounter1;
+        this.id = ++robotCounter;
     }
 
     public void displayInformation() {
         System.out.printf("Я %d-й из %d роботов. Модель: %s. Произведен компанией %s в %d году.\n",
-                id, robotCounter1, model, vendor, productionYear);
+                id, robotCounter, model, vendor, productionYear);
     }
 }
