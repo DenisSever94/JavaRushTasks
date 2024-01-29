@@ -6,21 +6,15 @@ package com.javarush.task.pro.task08.task0814;
 
 public class Solution {
 
-    public static int setFlag(int number, int flagPos) {
-        //напишите тут ваш код
-        number = number & ~ (1 << flagPos);
-        return number;
+    public static int setFlag1(int number, int flagPos) {
+        return number | (1 << flagPos);
     }
 
     public static int resetFlag(int number, int flagPos) {
-        //напишите тут ваш код
-        number = number & ~ (1 << flagPos);
-        return number;
+        return number & ~(1 << flagPos);
     }
 
     public static boolean checkFlag(int number, int flagPos) {
-        //напишите тут ваш код
-        number = number & ~ (1 << flagPos);
-        return false;
+        return (number & (1 << flagPos)) == (1 << flagPos);
     }
 }
