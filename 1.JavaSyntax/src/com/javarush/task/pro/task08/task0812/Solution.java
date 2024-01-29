@@ -11,9 +11,9 @@ public class Solution {
         x=5, y=4
          */
 
-        Pair pair = new Pair(4, 5);
-        System.out.println(pair);
-        pair.swap();
-        System.out.println(pair);
+        Pair pair1 = new Pair(4, 5);
+        System.out.println(pair1);
+        pair1.swap();
+        System.out.println(pair1);
     }
 }
