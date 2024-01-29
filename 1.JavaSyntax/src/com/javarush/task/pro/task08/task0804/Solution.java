@@ -8,12 +8,12 @@ public class Solution {
 
     public static void main(String[] args) {
         for (int i = 0; i < 98; i++) {
-
+            
         }
-        System.out.println(generateNumber());
+        System.out.println(generateNumber1());
     }
 
-    public static int generateNumber() {
+    public static int generateNumber1() {
         return (int) (Math.random() * 99);
     }
 
