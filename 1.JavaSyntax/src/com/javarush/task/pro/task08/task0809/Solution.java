@@ -7,13 +7,13 @@ Counter
 public class Solution {
 
     public static void main(String[] args) throws InterruptedException {
-        printNumbers();
+        printNumbers1();
 
 
     }
 
 
-    public static void printNumbers() throws InterruptedException {
+    public static void printNumbers1() throws InterruptedException {
 
         for (int i = 1; i < 11; i++) {
             System.out.println(i);
