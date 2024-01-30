@@ -3,7 +3,7 @@ package com.javarush.task.pro.task08.task0805;
 import java.util.Random;
 
 public class MagicBall {
-    private static final String CERTAIN = "Бесспорно";
+    private static final String CERTAIN1 = "Бесспорно";
     private static final String DEFINITELY = "Определённо да";
     private static final String MOST_LIKELY = "Вероятнее всего";
     private static final String OUTLOOK_GOOD = "Хорошие перспективы";
@@ -13,7 +13,19 @@ public class MagicBall {
     private static final String VERY_DOUBTFUL = "Весьма сомнительно";
 
     public static String getPrediction() {
-        //напишите тут ваш код
-        return null;
+        
+        
+        return switch(new Random().nextInt(8)) {
+            case 0 -> CERTAIN1;
+            case 1 -> DEFINITELY;
+            case 2 -> MOST_LIKELY;
+            case 3 -> OUTLOOK_GOOD;
+            case 4 -> ASK_AGAIN_LATER;
+            case 5 -> TRY_AGAIN;
+            case 6 -> NO;
+            case 7 -> VERY_DOUBTFUL;
+            default -> null;
+            
+        };
     }
 }
