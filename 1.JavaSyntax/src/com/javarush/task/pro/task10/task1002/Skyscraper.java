@@ -3,7 +3,7 @@ package com.javarush.task.pro.task10.task1002;
 
 public class Skyscraper {
     public static final String SKYSCRAPER_WAS_BUILD = "Небоскреб построен.";
-    public static final String SKYSCRAPER_WAS_BUILD_FLOORS_COUNT1 = "Небоскреб построен. Количество этажей - ";
+    public static final String SKYSCRAPER_WAS_BUILD_FLOORS_COUNT = "Небоскреб построен. Количество этажей - ";
     public static final String SKYSCRAPER_WAS_BUILD_DEVELOPER = "Небоскреб построен. Застройщик - ";
 
 
@@ -14,7 +14,7 @@ public class Skyscraper {
 
     public Skyscraper(int count) {
 
-        System.out.println(SKYSCRAPER_WAS_BUILD_FLOORS_COUNT1 + count);
+        System.out.println(SKYSCRAPER_WAS_BUILD_FLOORS_COUNT + count);
 
     }
 
