@@ -7,10 +7,10 @@ package com.javarush.task.pro.task06.task0603;
 public class Solution {
 
     public static void main(String[] args) {
-        String firstname1 = "Ольга";
+        String firstname = "Ольга";
         String lastname = "Киприяновна";
         String favouritedish = "Пельмени";
-        printPersonInfo(firstname1, lastname, favouritedish);
+        printPersonInfo(firstname, lastname, favouritedish);
     }
 
     public static void printPersonInfo(String name, String surname, String meal){
