@@ -5,7 +5,7 @@ package com.javarush.task.pro.task11.task1109;
 */
 
 public class Outer {
-    class Inner {
+     class Inner {
         Inner() {
             System.out.println("Создание объекта внутреннего класса");
         }
