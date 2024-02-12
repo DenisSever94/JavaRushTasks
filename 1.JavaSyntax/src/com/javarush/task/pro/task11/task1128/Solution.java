@@ -7,7 +7,7 @@ package com.javarush.task.pro.task11.task1128;
 public class Solution {
 
     public static void main(String[] args) {
-        String numberStr = "147556369";
+        String numberStr = "147456369";
         for (char symbol : numberStr.toCharArray()) {
             System.out.print(digitToText(symbol));
             System.out.print(" ");
