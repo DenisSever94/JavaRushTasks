@@ -9,8 +9,8 @@ StringTokenizer
 
 public class Solution {
     public static void main(String[] args) {
-        String packagePath = "java.util.stream";
-        String[] tokens = getTokens(packagePath, "\\.");
+        String packagePath1 = "java.util.stream";
+        String[] tokens = getTokens(packagePath1, "\\.");
         System.out.println(Arrays.toString(tokens));
     }
 
