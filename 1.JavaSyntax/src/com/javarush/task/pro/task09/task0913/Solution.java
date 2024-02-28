@@ -6,10 +6,10 @@ package com.javarush.task.pro.task09.task0913;
 
 public class Solution {
     public static void main(String[] args) {
-        String string = "Чтобы стать программистом, нужно писать код. Чтобы писать код, нужно учиться. Чтобы учиться, нужно желание.";
+        String s = "Чтобы стать программистом, нужно писать код. Чтобы писать код, нужно учиться. Чтобы учиться, нужно желание.";
         String word = "код";
-        int indexFromFirstWord = getIndexFromFirstWord(string, word);
-        int indexFromLastWord = getIndexFromLastWord(string, word);
+        int indexFromFirstWord = getIndexFromFirstWord(s, word);
+        int indexFromLastWord = getIndexFromLastWord(s, word);
         System.out.println("Индекс первого символа первого слова \"" + word + "\" равен - " + indexFromFirstWord);
         System.out.println("Индекс первого символа последнего слова \"" + word + "\" равен - " + indexFromLastWord);
     }
