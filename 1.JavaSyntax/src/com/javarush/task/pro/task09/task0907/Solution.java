@@ -17,15 +17,15 @@ public class Solution {
     }
 
     public static String toHex(int decimalNumber) {
-        String hexNumber = "";
+        String hexNumber1 = "";
         if (decimalNumber <= 0) {
-            return hexNumber;
+            return hexNumber1;
         } else
             while (decimalNumber != 0) {
-                hexNumber = HEX.charAt(decimalNumber % 16) + hexNumber;
+                hexNumber1 = HEX.charAt(decimalNumber % 16) + hexNumber1;
                 decimalNumber /= 16;
             }
-        return hexNumber;
+        return hexNumber1;
     }
 
     public static int toDecimal(String hexNumber) {
@@ -33,9 +33,15 @@ public class Solution {
         if (hexNumber == null) {
             return hexDecimal;
         } else {
-
+/*
+                for (int i = 0; i < длина входящей строки; i++) {
+                десятичное число = 16 * десятичное число + индекс символа из строки HEX,
+                равного символу из входящей строки с индексом i
+ */
             for (int i = 0; i < hexNumber.length(); i++) {
+
                 hexDecimal = 16 * hexDecimal + HEX.indexOf(hexNumber.charAt(i));
+
             }
             return hexDecimal;
         }
