@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/* 
+Поработай обработчиком
+*/
+
 public class Solution {
 
     public static final String INPUT_NAME = "\nВведите имя: ";
@@ -40,11 +44,8 @@ public class Solution {
         System.out.printf(INPUT_AGE, name);
         int age = Integer.parseInt(scanner.nextLine());
 
-        if (user.equals("1")) {
-            System.out.println();
-
-        }
-            user.setName(name);
+        //напишите тут ваш код
+        user.setName(name);
 
         user.setAge(age);
 
