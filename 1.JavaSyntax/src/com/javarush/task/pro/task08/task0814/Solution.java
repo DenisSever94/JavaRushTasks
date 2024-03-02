@@ -1,12 +1,10 @@
 package com.javarush.task.pro.task08.task0814;
 
-/* 
-Флаги
-*/
+
 
 public class Solution {
 
-    public static int setFlag1(int number, int flagPos) {
+    public static int setFlag(int number, int flagPos) {
         return number | (1 << flagPos);
     }
 
