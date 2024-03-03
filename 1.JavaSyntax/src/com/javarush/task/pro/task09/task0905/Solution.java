@@ -1,16 +1,14 @@
 package com.javarush.task.pro.task09.task0905;
 
-import java.util.regex.Pattern;
-
 /* 
 Восьмеричный конвертер
 */
 
 public class Solution {
     public static void main(String[] args) {
-        int decimalNumber = -4;
-        System.out.println("Десятичное число " + decimalNumber + " равно восьмеричному числу " + toOctal(decimalNumber));
-        int octalNumber = -35;
+        int decimalNumber1 = 21;
+        System.out.println("Десятичное число " + decimalNumber1 + " равно восьмеричному числу " + toOctal(decimalNumber1));
+        int octalNumber = 25;
         System.out.println("Восьмеричное число " + octalNumber + " равно десятичному числу " + toDecimal(octalNumber));
     }
 
@@ -19,31 +17,26 @@ public class Solution {
         if (decimalNumber <= 0) {
             return octalNumber;
         }
+
         int i = 0;
-        int octalNum = 0;
         while (decimalNumber != 0) {
-            octalNum += (decimalNumber % 8) * Math.pow(10, i);
+            octalNumber = (int) (octalNumber + (decimalNumber % 8) * Math.pow(10, i++));
             decimalNumber = decimalNumber / 8;
-            i++;
         }
-        return octalNum;
+        return octalNumber;
     }
 
     public static int toDecimal(int octalNumber) {
-        int octalNumber1 = 0;
+        int decimalNumber = 0;
         if (octalNumber <= 0) {
-            return octalNumber1;
+            return decimalNumber;
         }
+
         int i = 0;
-        int octalNum = 0;
         while (octalNumber != 0) {
-            octalNum += (octalNumber % 10) * Math.pow(8, i);
+            decimalNumber = (int) (decimalNumber + (octalNumber % 10) * Math.pow(8, i++));
             octalNumber = octalNumber / 10;
-            i++;
-
         }
-        return octalNum;
-
-
+        return decimalNumber;
     }
 }
