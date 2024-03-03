@@ -2,7 +2,7 @@ package com.javarush.task.pro.task06.task0616;
 
 
 public class Solution {
-    public String name = "Amigo";
+    public String name1 = "Amigo";
     public String position = "Java developer";
     public int salary = 10_000;
 
