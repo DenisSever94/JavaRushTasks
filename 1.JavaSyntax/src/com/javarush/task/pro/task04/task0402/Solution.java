@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        String text = " любит меня.";
+        String string = " любит меня.";
 
 
         Scanner scanner = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class Solution {
         
         int number = 0;
         while (number < 10) {
-            System.out.println(str + text);
+            System.out.println(str + string);
             number++;
         }
     }
