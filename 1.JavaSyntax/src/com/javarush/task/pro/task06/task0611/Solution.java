@@ -6,11 +6,11 @@ package com.javarush.task.pro.task06.task0611;
 
 public class Solution {
     public static void main(String[] args) {
-        int[] array = {123, 7, -14, 67, 16, 98, 75, 576};
+        int[] arrayy = {123, 7, -14, 67, 16, 98, 75, 576};
         System.out.println("В массиве: ");
-        printArray(array);
-        System.out.println("Минимальное число: " + getMinValue(array));
-        System.out.println("Максимальное число: " + getMaxValue(array));
+        printArray(arrayy);
+        System.out.println("Минимальное число: " + getMinValue(arrayy));
+        System.out.println("Максимальное число: " + getMaxValue(arrayy));
 
     }
 
