@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner1 = new Scanner(System.in);
-        boolean ENTER = false;
+        boolean enter = false;
         int sum = 0;
 
         while (scanner1.hasNextInt()) {
             int number = scanner1.nextInt();
 
 
-            if (!ENTER) {
+            if (!enter) {
                 sum = sum + number;
-            } else ENTER = scanner1.equals(ENTER);
+            } else enter = scanner1.equals(enter);
 
         }
         System.out.println(sum);
