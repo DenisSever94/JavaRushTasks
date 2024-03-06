@@ -1,11 +1,6 @@
 package com.javarush.task.pro.task14.task1406;
 
 import java.util.Scanner;
-
-/* 
-Купи слона
-*/
-
 class Solution {
 
     public static void main(String[] args) {
@@ -27,8 +22,12 @@ class Solution {
 
         try {
             buyElephant(answer, scanner);
-        } catch (Exception e) {
-            //напишите тут ваш код
+        } catch (SecurityException securityException) {
+            if (scanner.equals("ok")) {
+
+            }
+            System.out.println(answer);
+
         }
     }
 }
