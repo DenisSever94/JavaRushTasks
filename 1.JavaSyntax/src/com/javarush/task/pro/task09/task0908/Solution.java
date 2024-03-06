@@ -41,8 +41,16 @@ public class Solution {
         return hexNumber.toString();
     }
 
-    public static String toBinary(String hexNumber)  {
-        return null;
+    public static String toBinary(String hexNumber) {
+        if (hexNumber == null || hexNumber.isEmpty() || !hexNumber.matches("[0-9a-f]+")) {
+            return "";
+        }
+        int index = HEX.indexOf("");
+        for (int i = 0; i <hexNumber.length(); i++) {
+            char aChar = hexNumber.charAt(i);
+
+        }
+            return null;
     }
 
     public static String toHex1(String binaryNumber) {
