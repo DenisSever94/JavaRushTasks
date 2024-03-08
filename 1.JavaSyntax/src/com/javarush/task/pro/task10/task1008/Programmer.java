@@ -5,14 +5,14 @@ package com.javarush.task.pro.task10.task1008;
 */
 
 public class Programmer {
-    private int salary = 1000;
+    private int salary1 = 1000;
 
-    public int getSalary() {
-        return salary;
+    public int getSalary1() {
+        return salary1;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary > this.salary ? salary : this.salary;
+    public void setSalary1(int salary1) {
+        this.salary1 = salary1 > this.salary1 ? salary1 : this.salary1;
     }
 }
 
