@@ -1,7 +1,6 @@
 package com.javarush.task.pro.task09.task0908;
 
 import java.util.Arrays;
-import java.util.regex.Pattern;
 
 public class Solution {
     private static final String HEX = "0123456789abcdef";
@@ -45,12 +44,15 @@ public class Solution {
         if (hexNumber == null || hexNumber.isEmpty() || !hexNumber.matches("[0-9a-f]+")) {
             return "";
         }
-        int index = HEX.indexOf("");
-        for (int i = 0; i <hexNumber.length(); i++) {
+        StringBuilder binaryNumber = new StringBuilder();
+        for (int i = 0; i < hexNumber.length(); i++) {
             char aChar = hexNumber.charAt(i);
+            int index = HEX.indexOf(aChar);
+            String fourBit = BINARY[index];
+            binaryNumber.append(fourBit);
 
         }
-            return null;
+        return binaryNumber.toString();
     }
 
     public static String toHex1(String binaryNumber) {
