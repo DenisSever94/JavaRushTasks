@@ -23,7 +23,7 @@ public class StringLinkedList {
         node.prev = lastNode;
         last.prev = node;
     }
-
+//
 //    public String get(int index) {
 //
 //    }
