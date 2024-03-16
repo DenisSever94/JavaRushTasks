@@ -5,7 +5,7 @@ package com.javarush.task.pro.task12.task1202;
 */
 
 public class Solution {
-    Byte byteValueBox;
+    Byte byteValueBox1;
     Short shortValueBox;
     Integer integerValueBox;
     Long longValueBox;
@@ -15,7 +15,7 @@ public class Solution {
 
     Character characterValueBox;
     Boolean booleanValueBox;
-    byte byteValue = byteValueBox.byteValue();
+    byte byteValue = byteValueBox1.byteValue();
     short shortValue = shortValueBox.shortValue();
     int intValue = integerValueBox.intValue();
     long longValue = longValueBox.longValue();
