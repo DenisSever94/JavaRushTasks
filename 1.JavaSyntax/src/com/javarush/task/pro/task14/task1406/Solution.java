@@ -15,7 +15,7 @@ class Solution {
     }
 
     static void buyElephant(String answer, Scanner scanner) {
-        ArrayList<String> input = new ArrayList<>();
+
         while (true) {
             if (answer == null) {
                 System.err.println("Купи слона");
