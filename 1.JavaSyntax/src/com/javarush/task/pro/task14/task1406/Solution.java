@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task14.task1406;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /* 
@@ -14,21 +15,25 @@ class Solution {
     }
 
     static void buyElephant(String answer, Scanner scanner) {
-        if (answer == null) {
-            System.out.println("Купи слона");
-        } else if (answer.toLowerCase().equals("ок")) {
-            System.out.println("Так-то лучше :) Список твоих отговорок:");
-            throw new SecurityException();
-        } else {
-            System.out.println("Все говорят \"" + answer + "\", а ты купи слона");
-        }
+        ArrayList<String> input = new ArrayList<>();
+        while (true) {
+            if (answer == null) {
+                System.err.println("Купи слона");
+            } else if (answer.toLowerCase().equals("ок")) {
+                System.out.println("Так-то лучше :) Список твоих отговорок:");
+                throw new SecurityException();
+            } else {
+                System.err.println("Все говорят \"" + answer + "\", а ты купи слона");
+            }
 
-        answer = scanner.nextLine();
+            answer = scanner.nextLine();
 
-        try {
-            buyElephant(answer, scanner);
-        } catch (Exception e) {
-
+            try {
+                buyElephant(answer, scanner);
+            } catch (Exception e) {
+                System.out.println(answer);
+                throw e;
+            }
         }
     }
 }
