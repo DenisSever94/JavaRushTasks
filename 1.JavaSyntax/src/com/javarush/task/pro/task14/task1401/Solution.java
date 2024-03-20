@@ -3,11 +3,6 @@ package com.javarush.task.pro.task14.task1401;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-/* 
-Поработай обработчиком
-*/
-
 public class Solution {
 
     public static final String INPUT_NAME = "\nВведите имя: ";
@@ -30,7 +25,6 @@ public class Solution {
         for (int i = 0; i < 5; i++) {
             addUser(new User());
         }
-
         User userToSearch = new User();
         userToSearch.setName("Рафаэль");
 
@@ -44,16 +38,37 @@ public class Solution {
         System.out.printf(INPUT_AGE, name);
         int age = Integer.parseInt(scanner.nextLine());
 
-        //напишите тут ваш код
-        user.setName(name);
 
-        user.setAge(age);
+        int nameIndex = user.setName(name); // в nameIndex вернули индекс имени
+        if (nameIndex == -1) { // пепебераем значения и выводим сообщение
+            System.out.println(CANNOT_BE_NULL);
+        } else if (nameIndex == -2) {
+            System.out.println(CANNOT_BE_EMPTY);
+        } else if (nameIndex == -3) {
+            System.out.println(CANNOT_CONTAIN_DIGIT);
+        } else if (nameIndex != 0) {
+            System.out.println(UNKNOWN_ERROR);
+        }
 
+
+        int ageIndex = user.setAge(age); // в ageIndex вернули возраст
+        if (ageIndex == -1) { // пепебераем значения и выводим сообщение
+            System.out.println(CANNOT_BE_NEGATIVE);
+        } else if (ageIndex == -2) {
+            System.out.println(CANNOT_BE_TOO_BIG);
+        } else if (ageIndex != 0) {
+            System.out.println(UNKNOWN_ERROR);
+        }
         users.add(user);
     }
 
     static void findUserIndex(User user) {
-        //напишите тут ваш код
-        System.out.printf(FOUND, user.getName(), users.indexOf(user));
+        int index = users.indexOf(user); // в index вернули индекс пользователя
+
+        if (index == -1) { // пепебераем значения и выводим сообщение
+            System.out.printf(NOT_FOUND, user.getName());
+        } else {
+            System.out.printf(FOUND, user.getName(), users.indexOf(user));
+        }
     }
 }
