@@ -23,10 +23,21 @@ public class StringLinkedList {
         node.prev = lastNode;
         last.prev = node;
     }
-//
-//    public String get(int index) {
-//
-//    }
+
+    public String get(int index) {
+        Node node = first.next;
+        int count = 0;
+        while (node != null) {
+            if (index == count) {
+                return node.value;
+            }
+
+            node = node.next;
+            count++;
+
+        }
+        return null;
+    }
 
     public static class Node {
         private Node prev;
