@@ -2,11 +2,6 @@ package com.javarush.task.pro.task11.task1123;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/* 
-Почувствуй себя деканом
-*/
-
 public class UniversityGroup {
     public List<String> students;
 
@@ -22,16 +17,16 @@ public class UniversityGroup {
     }
 
     public void exclude(String excludedStudent) {
-        for (String student : students) {
+        List<String> copy = new ArrayList<>(students);
+        for (String student : copy) {
             if (student.equals(excludedStudent)) {
-                students.removeIf(s -> s.startsWith("Виталий Правдивый"));
+                students.remove(student);
             }
         }
     }
 
     public static void main(String[] args) {
         UniversityGroup universityGroup = new UniversityGroup();
-
         universityGroup.exclude("Виталий Правдивый");
         universityGroup.students.forEach(System.out::println);
     }
