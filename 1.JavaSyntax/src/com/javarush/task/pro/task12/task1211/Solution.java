@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Solution {
 
-    public static int[] numbers1 = new int[]{56, 45, 89, 1, 45, 13, 4, 69, 11, -89};
+    public static int[] numbers = new int[]{56, 45, 89, 1, 45, 13, 4, 69, 11, -89};
 
     public static void main(String[] args) {
         print();
@@ -16,7 +16,7 @@ public class Solution {
 
     public static void sort() {
 
-        Arrays.sort(numbers1);
+        Arrays.sort(numbers);
 //        for (int i = 0; i < numbers.length - 1; i++) {
 //            for (int j = 0; j < numbers.length - i - 1; j++) {
 //                if (numbers.get(j) > numbers.get(j + 1)) {
@@ -29,7 +29,7 @@ public class Solution {
     }
 
     public static void print() {
-        for (int number : numbers1) {
+        for (int number : numbers) {
             System.out.print(number + "\t");
         }
     }
