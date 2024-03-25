@@ -6,12 +6,12 @@ package com.javarush.task.pro.task12.task1206;
 
 public class Solution {
     public static void main(String[] args) {
-        String string1 = "Думаю, это будет новой фичей." +
+        String s = "Думаю, это будет новой фичей." +
                 "Только не говорите никому, что она возникла случайно.";
 
-        System.out.println("Количество цифр в строке : " + countDigits(string1));
-        System.out.println("Количество букв в строке : " + countLetters(string1));
-        System.out.println("Количество пробелов в строке : " + countSpaces(string1));
+        System.out.println("Количество цифр в строке : " + countDigits(s));
+        System.out.println("Количество букв в строке : " + countLetters(s));
+        System.out.println("Количество пробелов в строке : " + countSpaces(s));
     }
 
     public static int countDigits(String string) {
