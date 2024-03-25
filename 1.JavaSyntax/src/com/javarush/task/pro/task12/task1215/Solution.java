@@ -2,9 +2,7 @@ package com.javarush.task.pro.task12.task1215;
 
 import java.util.ArrayList;
 
-/* 
-Разбираем пирамиду бокалов
-*/
+
 
 public class Solution {
 
