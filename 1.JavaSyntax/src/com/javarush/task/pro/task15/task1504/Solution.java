@@ -10,10 +10,8 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String str1 = scanner.nextLine();
-        String str2 = scanner.nextLine();
-
-//        Files.newInputStream()
+        String string1 = scanner.nextLine();
+        String string2 = scanner.nextLine();
 
     }
 }
