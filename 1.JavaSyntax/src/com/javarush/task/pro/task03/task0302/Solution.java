@@ -7,19 +7,8 @@ import java.util.Scanner;
 */
 
 public class Solution {
-
     public static void main(String[] args) {
         String militaryCommissar = ", явитесь в военкомат";
-//        Scanner name = new Scanner(System.in);
-        Scanner console = new Scanner(System.in);
-        String name1 = console.nextLine();
-
-        int yourAge = console.nextInt();
-
-        if (yourAge >= 18 && yourAge <= 28)  {
-            System.out.println(name1 + militaryCommissar);
-
-        }
-
+        //напишите тут ваш код
     }
 }
