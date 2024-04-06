@@ -4,14 +4,18 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+/* 
+Лонг дринк
+*/
+
 public class Solution {
 
     public static void main(String[] args) {
         Map<String, Integer> screwdriverIngredients = makeScrewdriver();
-        String screwdriver = screwdriverIngredients.keySet().stream()
+        String collect = screwdriverIngredients.keySet().stream()
                 .map(key -> key + "=" + screwdriverIngredients.get(key))
                 .collect(Collectors.joining(", ", "{", "}"));
-        System.out.println(screwdriver);
+        System.out.println(collect);
     }
 
     static Map<String, Integer> makeScrewdriver() {
