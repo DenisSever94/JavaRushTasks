@@ -6,7 +6,7 @@ package com.javarush.task.pro.task14.task1414;
 
 public class Solution {
 
-    public static final String OUTPUT_FORMAT = "Метод %s вызван из строки %d класса %s в файле %s.\n";
+    public static final String STRING = "Метод %s вызван из строки %d класса %s в файле %s.\n";
 
     public static void main(String[] args) {
         makeScrewdriver();
@@ -15,8 +15,8 @@ public class Solution {
     public static void printStackTrace(StackTraceElement[] stackTrace) {
     StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
         for (StackTraceElement s: stackTrace) {
-            System.out.printf(OUTPUT_FORMAT, s.getMethodName(), s.getLineNumber(), s.getClassName(), s.getFileName());
-        }// меняем принтл на принтФ и через точку у s которая хранит данные стека вызываем методы стека
+            System.out.printf(STRING, s.getMethodName(), s.getLineNumber(), s.getClassName(), s.getFileName());
+        }
     }
 
     static void makeScrewdriver() {
