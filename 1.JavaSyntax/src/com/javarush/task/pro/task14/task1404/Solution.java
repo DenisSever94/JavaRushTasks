@@ -4,9 +4,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/* 
+Помощник преподавателя-3
+*/
+
 public class Solution {
 
-    public static final String PROMPT_STRING = "Введите номер студента, или exit для выхода: ";
+    public static final String PROMPT_STRING1 = "Введите номер студента, или exit для выхода: ";
     public static final String EXIT = "exit";
     public static final String ANSWERING = "Отвечает ";
     public static final String NOT_EXIST = "Студента с таким номером не существует";
@@ -29,7 +33,7 @@ public class Solution {
 
         while (true) {
             try {
-                System.out.print(PROMPT_STRING);
+                System.out.print(PROMPT_STRING1);
                 String input = scanner.nextLine();
                 if (input.toLowerCase().equals(EXIT)) {
                     break;
@@ -37,9 +41,9 @@ public class Solution {
 
                 int studentId = Integer.parseInt(input);
                 System.out.println(ANSWERING + studentsJournal.get(studentId));
-            } catch (NumberFormatException a) {
+            } catch (NumberFormatException e) {
                 System.out.println(INTEGER_REQUIRED);
-            } catch (Exception e) {
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println(NOT_EXIST);
             }
         }
