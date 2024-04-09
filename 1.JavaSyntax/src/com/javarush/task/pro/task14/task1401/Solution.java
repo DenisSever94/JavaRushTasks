@@ -3,9 +3,14 @@ package com.javarush.task.pro.task14.task1401;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+/* 
+Поработай обработчиком
+*/
+
 public class Solution {
 
-    public static final String INPUT_NAME = "\nВведите имя: ";
+    public static final String ВВЕДИТЕ_ИМЯ = "\nВведите имя: ";
     public static final String INPUT_AGE = "Введите возраст пользователя '%s': ";
 
     public static final String CANNOT_BE_NULL = "Имя не может быть null.";
@@ -25,6 +30,7 @@ public class Solution {
         for (int i = 0; i < 5; i++) {
             addUser(new User());
         }
+
         User userToSearch = new User();
         userToSearch.setName("Рафаэль");
 
@@ -32,15 +38,15 @@ public class Solution {
     }
 
     static void addUser(User user) {
-        System.out.print(INPUT_NAME);
+        System.out.print(ВВЕДИТЕ_ИМЯ);
         String name = scanner.nextLine();
 
         System.out.printf(INPUT_AGE, name);
         int age = Integer.parseInt(scanner.nextLine());
 
 
-        int nameIndex = user.setName(name); // в nameIndex вернули индекс имени
-        if (nameIndex == -1) { // пепебераем значения и выводим сообщение
+        int nameIndex = user.setName(name);
+        if (nameIndex == -1) {
             System.out.println(CANNOT_BE_NULL);
         } else if (nameIndex == -2) {
             System.out.println(CANNOT_BE_EMPTY);
@@ -51,8 +57,8 @@ public class Solution {
         }
 
 
-        int ageIndex = user.setAge(age); // в ageIndex вернули возраст
-        if (ageIndex == -1) { // пепебераем значения и выводим сообщение
+        int ageIndex = user.setAge(age);
+        if (ageIndex == -1) {
             System.out.println(CANNOT_BE_NEGATIVE);
         } else if (ageIndex == -2) {
             System.out.println(CANNOT_BE_TOO_BIG);
@@ -63,9 +69,9 @@ public class Solution {
     }
 
     static void findUserIndex(User user) {
-        int index = users.indexOf(user); // в index вернули индекс пользователя
+        int index = users.indexOf(user);
 
-        if (index == -1) { // пепебераем значения и выводим сообщение
+        if (index == -1) {
             System.out.printf(NOT_FOUND, user.getName());
         } else {
             System.out.printf(FOUND, user.getName(), users.indexOf(user));
