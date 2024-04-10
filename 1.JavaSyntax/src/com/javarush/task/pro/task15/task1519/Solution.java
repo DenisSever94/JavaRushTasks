@@ -15,7 +15,7 @@ public class Solution {
                 if (Files.isRegularFile(path)) {
                 Path resolve = targetDirectory.resolve(path.getFileName());
                     Files.copy(path, resolve);
-
+                    
                 }
             }
         }
