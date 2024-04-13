@@ -1,9 +1,5 @@
 package com.javarush.task.pro.task14.task1414;
 
-/* 
-Готовим коктейли
-*/
-
 public class Solution {
 
     public static final String STRING = "Метод %s вызван из строки %d класса %s в файле %s.\n";
