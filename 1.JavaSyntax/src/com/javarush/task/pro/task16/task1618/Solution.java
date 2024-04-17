@@ -18,6 +18,7 @@ public class Solution {
     }
 
     static LocalDateTime changeZone(LocalDateTime fromDateTime, ZoneId fromZone, ZoneId toZone) {
+
         ZonedDateTime from = fromDateTime.atZone(fromZone);
         ZonedDateTime to = from.withZoneSameInstant(toZone);
         return to.toLocalDateTime();
