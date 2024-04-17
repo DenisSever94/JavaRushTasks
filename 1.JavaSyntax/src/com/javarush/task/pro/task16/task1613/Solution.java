@@ -3,11 +3,6 @@ package com.javarush.task.pro.task16.task1613;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
-/* 
-Фильтруем выходные
-*/
-
 public class Solution {
 
     private static final int FRIDAY = 5;
@@ -34,7 +29,7 @@ public class Solution {
     }
 
     public static boolean isWeekend(LocalDateTime dateTime) {
-        //напишите тут ваш код
+
 
         return false;
     }
