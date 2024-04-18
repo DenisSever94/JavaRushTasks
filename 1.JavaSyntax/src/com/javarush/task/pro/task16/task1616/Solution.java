@@ -17,9 +17,7 @@ public class Solution {
 
     static TreeSet<String> getSortedZones() {
         TreeSet<String> zones = new TreeSet<>();
-        for (String zone : ZoneId.getAvailableZoneIds()) {
-            zones.add(String.valueOf(zone));
-        }
+        zones.addAll(ZoneId.getAvailableZoneIds());
 
         return zones;
     }
