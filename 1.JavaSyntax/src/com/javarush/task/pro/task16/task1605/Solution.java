@@ -11,10 +11,9 @@ public class Solution {
     public static final Calendar INVENTION_DAY = new GregorianCalendar(2083, Calendar.JUNE, 12);
 
     public static void main(String[] args) {
-        Calendar currentDay = Calendar.getInstance();
-        while (!isTeleportInvented(currentDay)) {
-            currentDay.add(Calendar.YEAR, 10);
-
+        Calendar instance = Calendar.getInstance();
+        while (!isTeleportInvented(instance)) {
+            instance.add(Calendar.YEAR, 10);
         }
 
     }
