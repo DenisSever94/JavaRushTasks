@@ -11,19 +11,19 @@ import java.util.List;
 public class Solution {
 
     public static void main(String[] args) {
-        List<Date> dateArrayList = new ArrayList<>();
-        dateArrayList.add(new Date(2015, 12, 25, 20, 40));
-        dateArrayList.add(new Date("July 20, 1969"));
-        dateArrayList.add(new Date(1989, 11, 9));
-        dateArrayList.add(new Date("January 1, 2000"));
+        List<Date> datearraylist = new ArrayList<>();
+        datearraylist.add(new Date(2015, 12, 25, 20, 40));
+        datearraylist.add(new Date("July 20, 1969"));
+        datearraylist.add(new Date(1989, 11, 9));
+        datearraylist.add(new Date("January 1, 2000"));
 
         System.out.println("before fixes:");
-        dateArrayList.forEach(System.out::println);
+        datearraylist.forEach(System.out::println);
 
-        fixDate(dateArrayList);
+        fixDate(datearraylist);
 
         System.out.println("after fixes:");
-        dateArrayList.forEach(System.out::println);
+        datearraylist.forEach(System.out::println);
     }
 
     static void fixDate(List<Date> brokenDates) {
