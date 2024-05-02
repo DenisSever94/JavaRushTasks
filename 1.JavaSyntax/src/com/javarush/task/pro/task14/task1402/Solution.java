@@ -31,7 +31,7 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.print(STRING);
+            System.out.print(PROMPT_STRING);
             String input = scanner.nextLine();
             if (input.toLowerCase().equals(EXIT)) {
                 break;
