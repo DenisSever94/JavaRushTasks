@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Solution {
 
-    public static final String PROMPT_STRING1 = "Введите номер студента, или exit для выхода: ";
+    public static final String PROMPT_STRING = "Введите номер студента, или exit для выхода: ";
     public static final String EXIT = "exit";
     public static final String ANSWERING = "Отвечает ";
     public static final String NOT_EXIST = "Студента с таким номером не существует";
@@ -33,7 +33,7 @@ public class Solution {
 
         while (true) {
             try {
-                System.out.print(PROMPT_STRING1);
+                System.out.print(PROMPT_STRING);
                 String input = scanner.nextLine();
                 if (input.toLowerCase().equals(EXIT)) {
                     break;
