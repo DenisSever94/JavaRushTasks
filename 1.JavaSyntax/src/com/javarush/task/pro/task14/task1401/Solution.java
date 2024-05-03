@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Solution {
 
-    public static final String ВВЕДИТЕ_ИМЯ = "\nВведите имя: ";
+    public static final String INPUT_NAME = "\nВведите имя: ";
     public static final String INPUT_AGE = "Введите возраст пользователя '%s': ";
 
     public static final String CANNOT_BE_NULL = "Имя не может быть null.";
@@ -38,7 +38,7 @@ public class Solution {
     }
 
     static void addUser(User user) {
-        System.out.print(ВВЕДИТЕ_ИМЯ);
+        System.out.print(INPUT_NAME);
         String name = scanner.nextLine();
 
         System.out.printf(INPUT_AGE, name);
