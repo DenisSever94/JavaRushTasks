@@ -1,11 +1,7 @@
 package com.javarush.task.pro.task07.task0707;
 
-/* 
-5 оттенков char
-*/
-
 public class Solution {
-    public static char char22 = 101;
+    public static char aChar = 101;
     public static char char2 = 'H';
     public static char char3 = 114;
     public static char char4 = '\u006F';
@@ -19,7 +15,7 @@ public class Solution {
     public static void main(String[] args) {
 
         System.out.print(char2);
-        System.out.print(char22);
+        System.out.print(aChar);
         System.out.print(char5);
         System.out.print(char9);
         System.out.print(char4);
