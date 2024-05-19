@@ -1,5 +1,6 @@
 package com.javarush.task.task12.task1223;
 
+
 public class Solution {
     public static void main(String[] args) {
         Pet pet = new Cat();
@@ -27,7 +28,7 @@ public class Solution {
     public static class Cat extends Pet {
         @Override
         public void setName(String name) {
-            super.setName(name);
+          this.name = "";
         }
     }
 }
