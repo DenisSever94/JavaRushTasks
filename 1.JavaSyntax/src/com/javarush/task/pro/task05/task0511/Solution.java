@@ -5,19 +5,19 @@ import java.util.Arrays;
 
 
 public class Solution {
-    public static int[][] ints;
+    public static int[][] multiArray;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
-        ints = new int[num][];
+        multiArray = new int[num][];
         for (int i = 0; i < num; i++) {
             int num2 = scanner.nextInt();
-            ints[i] = new int[num2];
+            multiArray[i] = new int[num2];
 
         }
-        System.out.println(Arrays.deepToString(ints));
+        System.out.println(Arrays.deepToString(multiArray));
 
 
     }
