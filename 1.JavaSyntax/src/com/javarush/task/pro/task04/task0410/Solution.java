@@ -23,11 +23,13 @@ public class Solution {
                 secondMin = number;
             } else if (number < min) {
                 secondMin = min;
-                min = number;
+                 min = number;
             } else if (number < secondMin && number > min) {
                 secondMin = number;
+
             }
-        }
-        System.out.println(secondMin);
+
+
+        }   System.out.println(secondMin);
     }
 }
