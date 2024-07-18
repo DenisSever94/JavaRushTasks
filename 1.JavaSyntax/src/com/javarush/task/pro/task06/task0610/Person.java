@@ -1,8 +1,8 @@
 package com.javarush.task.pro.task06.task0610;
 
 public class Person {
-    private String firstName;
-    private String lastName;
+    public String firstName;
+    public String lastName;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -17,7 +17,7 @@ public class Person {
         return lastName;
     }
 
-    private String getFullName(){
+public String getFullName(){
         return firstName + " " + lastName;
     }
 }
