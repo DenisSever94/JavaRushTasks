@@ -2,6 +2,9 @@ package com.javarush.task.pro.task05.task0517;
 
 import java.util.Arrays;
 
+/* 
+Делим массив
+*/
 
 public class Solution {
 
