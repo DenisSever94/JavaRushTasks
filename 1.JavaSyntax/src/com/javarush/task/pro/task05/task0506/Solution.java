@@ -7,12 +7,12 @@ public class Solution {
     public static int[] array;
 
     public static void main(String[] args) throws Exception {
-        Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int size = scanner1.nextInt();
+        int size = scanner.nextInt();
         array = new int[size];
         for (int i = 0; i < size; i++) {
-            array[i] = scanner1.nextInt();
+            array[i] = scanner.nextInt();
 
         }
         int min = array[0];
