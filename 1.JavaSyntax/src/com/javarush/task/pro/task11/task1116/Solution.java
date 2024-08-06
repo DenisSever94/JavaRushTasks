@@ -11,5 +11,5 @@ public class Solution {
     }
 }
 class Cat {
-    String name = "tom";
+    String name = "Tom";
 }
